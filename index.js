@@ -80,7 +80,7 @@ bot.command('cancel', (ctx) => {
 
 bot.command('find', ({ reply }) => reply('3 insurance best for you in your area \n http://www.cgi.com.cy  \n https://www.primeinsurance.eu \n http://www.cosmosinsurance.com.cy'))
 bot.command('help', ({ reply }) => reply('type /intro to introduce yourself, /find for the best offers'))
-bot.command('attach', ({ reply }) => reply('please attach your profiles and text save or leave'))
+bot.command('attach', ({ reply }) => reply('please attach your profiles and text "save" or "leave"'))
 
 
 bot.on('sticker', ({ reply }) => reply('👍'))
