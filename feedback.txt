@@ -1,0 +1,51 @@
+crowdhackathon+cyinsurance@crowdpolicy.com
+
+*teamname - Pirates-of-Pestulon
+
+*a1 about my application
+
+I have developed a chatbot for Telegram named InsuranceMarketplace
+It has commands that: 
+/help - helps ))
+/intro - indroduce the user. Gets the KYC data to HyperLedger Blockchain
+/find - finds neaby Insurance companies
+/list - get raw list of users on HyperLedger Blockchain 
+
+*a2 target groups
+
+	-Group 1 - potential customers. They look for insurance provider, select them using chat interface and 
+	can get additional discount after providing more data about themselves.
+
+	-Group2 - insurance companies. They get KYC data about their existing customers and find new one in open Marketplace.
+
+*a3 4 basic features
+
+	See a1 please
+
+*a5 technology areas
+
+	-Chatbots
+	-Blockchain	
+
+*b1 techstack
+	-Docker
+	-Blockchain
+	-nodejs
+	-HyperLedger Fabric
+
+*b2 external web services
+	-HyperLedger Fabric running locally in docker
+
+*C 5 printscreens max
+TBD. Please See attachment
+
+*d what is functional on screens
+	ChatBot is functional
+	Hyperledger Fabric with testing Network is functional
+	
+
+*d2 what will be developed after hackathon
+	Will develop better chat interface with scenes (state machines for dialogs).
+	Will put Hyperledger to the cloud for public use
+	Will develop smart contract for flight delays
+	Will use congnitive API to rapid user estimation
