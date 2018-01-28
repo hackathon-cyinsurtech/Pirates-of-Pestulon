@@ -1,5 +1,6 @@
 //const { Composer, log } = require('micro-bot')
 const { Composer, Stage, Scene, session, log } = require('micro-bot')
+var rest = require('restler');
 
 
 // const bot = new Composer()
@@ -78,12 +79,30 @@ bot.command('cancel', (ctx) => {
 
 })
 
+bot.command('list', (ctx) => {
+
+    rest.get('http://localhost:3000/api/Trader').on('complete', function(result) {
+    if (result instanceof Error) {
+        console.log('Error:', result.message);
+        this.retry(5000); // try again after 5 sec
+    } else {
+         console.log(result);
+
+         console.log(typeof result);
+         ctx.reply('list of Customers below: \n'+ JSON.stringify(result));
+
+    }
+});
+})
+
+
 bot.command('find', ({ reply }) => reply('3 insurance best for you in your area \n http://www.cgi.com.cy  \n https://www.primeinsurance.eu \n http://www.cosmosinsurance.com.cy'))
 bot.command('help', ({ reply }) => reply('type /intro to introduce yourself, /find for the best offers'))
 bot.command('attach', ({ reply }) => reply('please attach your profiles and text "save" or "leave"'))
 
 
 bot.on('sticker', ({ reply }) => reply('👍'))
+
 
 
 module.exports = bot

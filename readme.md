@@ -1,10 +1,8 @@
 # cool-bot
 
-[![Build Status](https://travis-ci.org//cool-bot.svg?branch=master)](https://travis-ci.org//cool-bot)
-
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com//cool-bot)
 
 ## Usage
+export BOT_TOKEN=529208568:AAHLQZH9tUSt0ggIVAdHOdU-CiSB6v8kdhk
 
 ```sh
 $ npm install
@@ -25,6 +23,15 @@ Assuming you've got `now` installed and set up:
 $ now -e BOT_TOKEN='123:......' /cool-bot
 ```
 
-Alternative, deploy right now without even leaving the browser:
+## Deployment
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com//cool-bot)
+Additionaly you will need to run HyperLedger Compose Playground on localhost:3000
+run composer-playground-rest server to provide rest API to playground (part of HyperLedger Fabric)
+deploy network configured in https://github.com/hackathon-cyinsurtech/HyperLedger
+after that /list comand in chatbot will provide you callback from HyperLedger Blockchain
+
+## Using MarketplaceInsurance Bot
+
+Telegram bot located in t.me/InsuranceMarketplaceBot
+
+
